@@ -42,3 +42,8 @@ gh issue list
 ```bash
 gh label list
 ```
+
+## Milestones 
+```bash
+gh milestone list
+```
