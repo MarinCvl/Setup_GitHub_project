@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Prompt user for issue title and body
+
+
+gh extension install valeriobelli/gh-milestone
+
+
+gh milestone create --title "Front-end"  --description "This is a description" --due-date ""
+gh milestone create --title "Back-end"  --description "This is a description" --due-date ""
+gh milestone create --title "Design"  --description "This is a description" --due-date ""
+
+
+
+
+
+
+
+
+# Create issue using gh command
+gh issue create --title "" --body ""
+gh issue create --title "faire le swagger" --body ""
+gh issue create --title "faire le design" --body ""
+gh issue create --title "faire le back" --body ""
+
+
