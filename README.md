@@ -1,4 +1,4 @@
-# el-portofolio-de-la-muerte
+# Setup GitHub project
 
 ## Install GitHub CLI
 
@@ -44,6 +44,46 @@ gh label list
 ```
 
 ## Milestones 
+
+### Lister les milestones
 ```bash
 gh milestone list
+```
+
+## Create an alias for use it in your project
+
+### open your bashrc
+
+```
+nano ~/.bashrc
+```
+
+### Create your function
+
+```
+download_execute_remove() {
+    # Link to download
+    url="https://raw.githubusercontent.com/MarinCvl/Setup_project_GitHuc_CLI/main/starterIssues"
+    
+    # Doawnload file from url
+    curl -O "$url"
+    
+    # Extract the name of the downloaded file
+    file_name=$(basename "$url")
+
+    # Set execution permissions
+    chmod +x "$file_name"
+    
+    # Execute file
+    ./"$file_name"
+    
+    # Delete the file once execution is complete
+    rm "$file_name"
+}
+```
+
+### Then assign this alias to a shorter command
+
+```
+alias dxe='download_execute_remove
 ```
