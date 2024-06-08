@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Prompt user for issue title and body
+
+export body="machin"
+
+# Create issue using gh command
+gh issue create --title "faire le front" --body "$body"
+gh issue create --title "faire le swagger" --body "$body"
+gh issue create --title "faire le design" --body "$body"
+gh issue create --title "faire le back" --body "$body"
+
