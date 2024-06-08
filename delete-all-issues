@@ -1,0 +1,1 @@
+gh issue list --json number --jq '.[].number' | while read -r issue_number; do     gh issue delete "$issue_number" --yes; done
