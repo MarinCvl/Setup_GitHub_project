@@ -24,15 +24,16 @@ gh label delete wontfix --yes
 
 # Create labels
 
-gh label create front --color 0356fc
-gh label create back --color fcdb03
-gh label create design --color 03fc39
-gh label create urgent --color fc0303
-gh label create ci-problem --color be03fc
-gh label create bug-to-fix --color fc0398
-gh label create documentation --color fc0ff8
+gh label create Front --color 8a42f5
+gh label create Back --color 51f542
+gh label create Design --color 42f5d4
+gh label create Urgent --color f20c0c
+gh label create Ci-problem --color bcf542
+gh label create Bug-to-fix --color f26c0c
+gh label create Documentation --color 4287f5
+gh label create Security --color f2c00c
 
 
 # Create issue using gh command
-gh issue create --title "design des pages" --body "" --label "design"
-gh issue create --title "faire le swagger" --body "" --label "documentation"
+gh issue create --title "Maquette" --body "" --label "design"
+gh issue create --title "Swagger" --body "" --label "documentation"
