@@ -1,0 +1,3 @@
+#!/bin/bash
+gh label list --json name --jq '.[].name' | while read -r label; do gh label delete "$label" --yes; done
+

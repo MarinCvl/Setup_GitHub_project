@@ -1,0 +1,2 @@
+#!/bin/bash
+gh milestone list --json number --jq '.[].number' | while read -r milestone_number; do gh milestone delete "$milestone_number" --confirm; done

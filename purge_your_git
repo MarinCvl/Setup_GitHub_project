@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Delete all your issues
+gh issue list --json number --jq '.[].number' | while read -r issue_number; do     gh issue delete "$issue_number" --yes; done
+
+# Delete all your labels
+gh label list --json name --jq '.[].name' | while read -r label; do gh label delete "$label" --yes; done
+
+# Delete all yout milestones
+gh milestone list --json number --jq '.[].number' | while read -r milestone_number; do gh milestone delete "$milestone_number" --confirm; done
