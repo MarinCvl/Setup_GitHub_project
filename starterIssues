@@ -35,5 +35,5 @@ gh label create Security --color f2c00c
 
 
 # Create issue using gh command
-gh issue create --title "Maquette" --body "" --label "design"
-gh issue create --title "Swagger" --body "" --label "documentation"
+gh issue create --title "Maquette" --body "" --label "Design"
+gh issue create --title "Swagger" --body "" --label "Documentation"
