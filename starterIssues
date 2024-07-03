@@ -6,9 +6,9 @@
 gh extension install valeriobelli/gh-milestone
 
 ## Create Milestones
-gh milestone create --title "Front-end"  --description "This is a description" --due-date ""
-gh milestone create --title "Back-end"  --description "This is a description" --due-date ""
-gh milestone create --title "Design"  --description "This is a description" --due-date ""
+gh milestone create --title "Front-end"  --description "" --due-date ""
+gh milestone create --title "Back-end"  --description "" --due-date ""
+gh milestone create --title "Design"  --description "" --due-date ""
 
 
 # Delete all default label
